@@ -51,6 +51,12 @@ function Header() {
               <Link className="nav-link" aria-current="page" to="/">
                 Home
               </Link>
+              <Link className="nav-link" aria-current="page" to="/">
+                Food Category
+              </Link>
+              <Link className="nav-link" aria-current="page" to="/">
+                Recipe
+              </Link>
             </li>
             <div className="flex-grow-1 d-flex justify-content-end">
               {user && (
