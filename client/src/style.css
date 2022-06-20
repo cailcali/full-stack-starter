@@ -1,0 +1,83 @@
+/* CSS files add styling rules to your content */
+
+.box {
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  padding-bottom: 20%;
+  margin: 50px auto;
+  top: 100px;
+}
+
+.gradient-button {
+  background-image: linear-gradient(to right, lightsteelblue 0%, steelblue 50%, lightsteelblue 100%);
+  width: 400px;
+  height: 80px;
+  background-color: steelblue;
+  font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+  font-size: 40px;
+}
+
+.v {
+  background-image: url(https://www.health.harvard.edu/media/content/images/cr/f5282d05-33f5-4c93-a08e-b000164a54db.jpg);
+  background-position: 50%;
+}
+
+.c {
+  background-image: url(https://cook.fnr.sndimg.com/content/dam/images/cook/fullset/2012/2/1/0/CCKEL301_sesame-ginger-chicken_s4x3.jpg.rend.hgtvcom.441.331.suffix/1532967495129.jpeg);
+  background-position: 0% 0%;
+}
+
+.i {
+  background-image: url(https://www.lagalleriarestaurant.co.uk/assets/images/1.jpeg);
+  background-position: 10% -30%;
+}
+
+.a {
+  background-image: url(https://i.pinimg.com/564x/df/1c/60/df1c6077e5d0ae7045e3ddd774ddf36f.jpg);
+  background-position: 50% 60%;
+}
+
+body {
+  background-size: auto 1100px;
+  background-image: linear-gradient(#ed8f03, #fceabb);
+  /*background-image: linear-gradient(to top, #c79081 0%, #dfa579 100%);
+  background-image: url(https://cdn.glitch.com/3a9ed896-ed4b-410e-bae4-7a92b5c3f57f%2Fbg.png?v=1602719360993);*/
+}
+
+.h2 {
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+  color: steelblue;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+}
+
+h4 {
+  text-align: center;
+  color: steelblue;
+  font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+}
+
+.navbar {
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  font-size: 25px;
+  font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px grey;
+}
+
+.cover {
+  object-fit: cover;
+}

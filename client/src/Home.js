@@ -1,14 +1,34 @@
 import Item from './Item';
+import './style.css';
 
 function Home() {
   return (
-    <main className="container">
-      <h1>Eat Healthy</h1>
-      <Item title="Vegetarian" text="Text 1" />
-      <Item title="American" text="Text 2" />
-      <Item title="Chinese" text="Text 3" />
-      <Item title="Italian" text="Text 4" />
-    </main>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="box v">
+            <Item title="Vegetarian" link="veg"></Item>
+          </div>
+        </div>
+        <div class="col">
+          <div class="box a">
+            <Item title="American" link="american" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="box c">
+            <Item title="Chinese" link="chinese" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="box i">
+            <Item title="Italian" link="italian" />
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
 

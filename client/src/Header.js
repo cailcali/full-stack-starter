@@ -33,7 +33,7 @@ function Header() {
     <nav className="header navbar navbar-expand-md navbar-light bg-light fixed-top">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          Full Stack Starter
+          Eat Healthy
         </Link>
         <button
           className="navbar-toggler"
@@ -50,12 +50,6 @@ function Header() {
             <li className="nav-item active">
               <Link className="nav-link" aria-current="page" to="/">
                 Home
-              </Link>
-              <Link className="nav-link" aria-current="page" to="/">
-                Food Category
-              </Link>
-              <Link className="nav-link" aria-current="page" to="/">
-                Recipe
               </Link>
             </li>
             <div className="flex-grow-1 d-flex justify-content-end">
