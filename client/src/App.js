@@ -5,6 +5,7 @@ import './App.scss';
 import { AuthContextProvider, AuthProtected } from './AuthContext';
 import Header from './Header';
 import Home from './Home';
+import Detail from './Detail';
 import Veg from './Veg';
 import American from './American';
 import Italian from './Italian';
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/Detail/:id" element={<Detail />} />
           <Route path="/Veg" element={<Veg />} />
           <Route path="/American" element={<American />} />
           <Route path="/Italian" element={<Italian />} />

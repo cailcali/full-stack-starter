@@ -14,7 +14,7 @@ function Veg() {
       <div class="col-sm-3">
         <div class="row" style={{ display: 'flex', flexWrap: 'noWrap' }}>
           {items.map((item) => (
-            <List title={item.fields['Recipe name']} pic={item.fields.Picture[0].url} />
+            <List id={item.id} title={item.fields['Recipe name']} pic={item.fields.Picture[0].url} />
           ))}
         </div>
       </div>
