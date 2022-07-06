@@ -5,7 +5,9 @@ import './style.css';
 function Veg() {
   const [items, setItems] = useState([]);
   useEffect(function () {
-    const request = fetch('https://api.airtable.com/v0/appTEF3HX6lc96DcR/Vegetarian?api_key=key5zkU8SBip3vhWj');
+    const request = fetch(
+      'https://api.airtable.com/v0/appSeNpZMzPQuA8h7/Recipes?filterByFormula=%7BCategory%7D+%3D+%22Vegetarian%22&api_key=key5zkU8SBip3vhWj'
+    );
     request.then((response) => response.json()).then((data) => setItems(data.records));
   }, []);
 
