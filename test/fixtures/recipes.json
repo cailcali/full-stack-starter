@@ -1,0 +1,24 @@
+[
+  {
+    "model": "Recipe",
+    "data": {
+      "id": 1,
+      "Name": "Test for fixture 1.",
+      "Category": "Test category for fixture 1.",
+      "Picture": "Test picture for fixture 1.",
+      "Instructions": "Test instructions for fixture 1.",
+      "Ingredients": "Test ingredients for fixture 1."
+    }
+  },
+  {
+    "model": "Recipe",
+    "data": {
+      "id": 2,
+      "Name": "Test for fixture 2.",
+      "Category": "Test category for fixture 2.",
+      "Picture": "Test picture for fixture 2.",
+      "Instructions": "Test instructions for fixture 2.",
+      "Ingredients": "Test ingredients for fixture 2."
+    }
+  }
+]

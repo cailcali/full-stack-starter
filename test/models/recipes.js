@@ -5,7 +5,7 @@ const models = require('../../models');
 
 describe('models.Recipe', () => {
   beforeEach(async () => {
-    await helper.loadFixtures([]);
+    await helper.loadFixtures(['recipes']);
   });
 
   it('creates a new Item record', async () => {
@@ -20,5 +20,10 @@ describe('models.Recipe', () => {
     item = await models.Recipe.findByPk(item.id);
     assert.deepStrictEqual(item.Name, 'Test Title');
     assert.deepStrictEqual(item.Picture, 'This is longer test Text.');
+  });
+
+  it('fetches all the Items', async () => {
+    const results = await models.Recipe.findAll();
+    assert.deepStrictEqual(results.length, 2);
   });
 });
