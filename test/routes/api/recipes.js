@@ -21,4 +21,19 @@ describe('/api/recipes', () => {
       assert.deepStrictEqual(items.length, 2);
     });
   });
+
+  describe('GET /:id', () => {
+    it('returns one Item by id', async () => {
+      const response = await testSession.get('/api/recipes/2').expect(HttpStatus.OK);
+      const item = response.body;
+      assert.deepStrictEqual(item.Name, 'Test for fixture 2.');
+      assert.deepStrictEqual(item.Category, 'Test category for fixture 2.');
+      assert.deepStrictEqual(item.Picture, 'Test picture for fixture 2.');
+      assert.deepStrictEqual(item.Instructions, 'Test instructions for fixture 2.');
+      assert.deepStrictEqual(item.Ingredients, 'Test ingredients for fixture 2.');
+    });
+    it('returns NOT FOUND for an id not in the database', async () => {
+      await testSession.get('/api/recipes/0').expect(HttpStatus.NOT_FOUND);
+    });
+  });
 });

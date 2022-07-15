@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const fetch = require('node-fetch');
+
+const models = require('../models');
+
+fetch(`https://api.airtable.com/v0/appSeNpZMzPQuA8h7/Recipes?api_key=key5zkU8SBip3vhWj&maxRecords=100`)
+  .then((response) => response.json())
+  .then(async (data) => {
+    for (const record of data.records) {
+      const { fields } = record;
+      const item = models.Recipe.build({
+        Name: fields.Name,
+        Category: fields.Category,
+        Picture: fields.Picture?.[0]?.url,
+        Instructions: fields.Instructions,
+        Ingredients: fields.Ingredients,
+      });
+      await item.save();
+    }
+  });

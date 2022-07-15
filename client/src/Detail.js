@@ -10,7 +10,7 @@ function Detail() {
   useEffect(
     function () {
       if (id) {
-        fetch(`https://api.airtable.com/v0/appSeNpZMzPQuA8h7/Recipes/${id}?api_key=key5zkU8SBip3vhWj`)
+        fetch(`/api/recipes/${id}`)
           .then((response) => response.json())
           .then((data) => setData(data));
       }
@@ -29,15 +29,15 @@ function Detail() {
   return (
     <main class="container">
       <div class="center">
-        <h1>{data?.fields?.Name}</h1>
-        <img src={data?.fields?.Picture[0].url} height="450" />
+        <h1>{data?.Name}</h1>
+        <img src={data?.Picture} height="450" />
       </div>
       <div class="row">
         <div class="col-sm">
           <div class="card border-dark" style={{ height: 'auto', marginTop: '15px' }}>
             <div class="card-body">
               <h4 class="card-title">Instructions</h4>
-              <p>{data?.fields?.Instructions}</p>
+              <p>{data?.Instructions}</p>
             </div>
           </div>
         </div>
@@ -45,7 +45,7 @@ function Detail() {
           <div class="card border-dark" style={{ height: 'auto', marginTop: '15px' }}>
             <div class="card-body">
               <h4 class="card-title">Ingredients</h4>
-              <p>{data?.fields?.Ingredients}</p>
+              <p>{data?.Ingredients}</p>
             </div>
           </div>
         </div>
