@@ -28,10 +28,10 @@ function Detail() {
 
   return (
     <main class="container">
-      <div class="center">
-        <h1>{data?.Name}</h1>
+      <h1>{data?.Name}</h1>
+      <center>
         <img src={data?.Picture} height="450" />
-      </div>
+      </center>
       <div class="row">
         <div class="col-sm">
           <div class="card border-dark" style={{ height: 'auto', marginTop: '15px' }}>

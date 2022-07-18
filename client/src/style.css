@@ -45,6 +45,13 @@ body {
   background-image: url(https://cdn.glitch.com/3a9ed896-ed4b-410e-bae4-7a92b5c3f57f%2Fbg.png?v=1602719360993);*/
 }
 
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  font-family: georgia, palatino, 'book antiqua', 'palatino linotype', serif;
+}
+
 .h2 {
   font-size: 22px;
   font-weight: bold;
