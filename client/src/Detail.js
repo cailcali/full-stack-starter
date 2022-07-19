@@ -23,7 +23,7 @@ function Detail() {
   }
 
   function numberedFormat(value) {
-    return value.split('&').join('<br><br>');
+    return value.split('&').join('\n');
   }
 
   return (
